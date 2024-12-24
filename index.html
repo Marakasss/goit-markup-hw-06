@@ -43,16 +43,22 @@
         <!---------Contacts---------->
         <address class="contacts">
           <ul class="contacts-item">
-            <li>
+            <li class="contacts-list">
               <a href="mailto:info@devstudio.com" class="link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="contacts-list">
               <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button" id="burger-btn">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger-btn"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -366,7 +372,7 @@
 
       <!------------------------Portfolio section------------------------>
 
-      <section class="section portfolio-section">
+      <section class="section portfolio-section hidden">
         <div class="container">
           <h2 class="section-tittle">Our Portfolio</h2>
 
@@ -509,7 +515,7 @@
 
     <!-----------------------------Footer------------------------------>
 
-    <footer class="footer-section">
+    <footer class="footer-section hidden">
       <div class="container">
         <div class="slogan-box">
           <a href="/" class="navbar-logo"
@@ -597,7 +603,7 @@
 
     <!-----------------------------Modal window------------------------------>
 
-    <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-overlay hidden" id="modalOverlay">
       <div class="modal">
         <button class="close-icon" type="button" id="modal_closeBtn">
           <svg class="modal-icon-close" width="8" height="8">
