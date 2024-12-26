@@ -60,6 +60,16 @@
           </svg>
         </button>
       </div>
+
+      <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-container" id="menu-container">
+          <button class="close-menu-btn" type="button" id="close-menu-btn">
+            <svg class="modal-icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -372,7 +382,7 @@
 
       <!------------------------Portfolio section------------------------>
 
-      <section class="section portfolio-section hidden">
+      <section class="section portfolio-section">
         <div class="container">
           <h2 class="section-tittle">Our Portfolio</h2>
 
@@ -515,8 +525,8 @@
 
     <!-----------------------------Footer------------------------------>
 
-    <footer class="footer-section hidden">
-      <div class="container">
+    <footer class="section footer-section">
+      <div class="container footer-wraper">
         <div class="slogan-box">
           <a href="/" class="navbar-logo"
             >Web<span class="logo-decoration-footer">Studio</span></a
@@ -603,7 +613,7 @@
 
     <!-----------------------------Modal window------------------------------>
 
-    <div class="modal-overlay hidden" id="modalOverlay">
+    <div class="modal-overlay" id="modalOverlay">
       <div class="modal">
         <button class="close-icon" type="button" id="modal_closeBtn">
           <svg class="modal-icon-close" width="8" height="8">
@@ -686,8 +696,10 @@
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="privacy-link" href="#">Privacy Policy</a>
+              <div class="privacy-wrp">
+                I accept the terms and conditions of the
+                <a class="privacy-link" href="#">Privacy Policy</a>
+              </div>
             </label>
           </div>
 
@@ -697,5 +709,6 @@
     </div>
 
     <script src="./js/modal.js" defer></script>
+    <script src="./js/burger-btn.js" defer></script>
   </body>
 </html>
