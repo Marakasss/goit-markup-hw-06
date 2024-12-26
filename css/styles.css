@@ -1078,6 +1078,7 @@ button {
     cursor: pointer;
     border-radius: 2px;
     display: flex;
+    align-items: center;
 }
 
 .privacy-link {
